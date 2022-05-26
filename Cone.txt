@@ -1,0 +1,23 @@
+package cube;
+
+public class Cone extends Shape {
+    private double side;
+    double radius;
+    double height;
+    //private double volume;
+
+    public void setSide(double r, double h) {
+        radius=r;
+        height=h;
+    }
+    public Cone(){
+    radius=2;
+    height=2;
+}
+
+    public double calcVolume() {
+        volume = (Math.PI*radius*radius*height/3);
+        return volume;
+    }
+
+}
